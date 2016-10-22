@@ -39,6 +39,14 @@ $RECYCLE.BIN/
 .Trashes
 .VolumeIcon.icns
 
+#Android file
+.gradle
+gradle/
+gradle/*.*
+.idea
+idea/
+idea/*.*
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
