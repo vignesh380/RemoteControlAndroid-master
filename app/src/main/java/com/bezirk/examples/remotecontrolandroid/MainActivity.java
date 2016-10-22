@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private static final int SPACE_BAR = 32;
     private static final String beaconMessage = "Shaswath is the man ";
     static Timer timer;
+    Boolean isConnectedFirstTime = true;
+    int count = 0;
+    int missed = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,24 +49,17 @@ public class MainActivity extends AppCompatActivity {
         final TimerTask aliveMessage = new TimerTask() {
             @Override
             public void run() {
-//                if(count==0)
-//                    missed++;
-//                if(missed == 0){
-//                    count = 0;
-//                    bezirk.sendEvent(new SimulateKeyEvent(37));
-//                }
-                EventSet localEventSet = new EventSet(BeaconsDetectedEvent.class);
-                localEventSet.setEventReceiver(new EventSet.EventReceiver() {
-                    @Override
-                    public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
-                        if (event instanceof BeaconsDetectedEvent) {
-                            bezirk.sendEvent(new SimulateKeyEvent(37));
-                        }
-                    }
-                });
-               // localEventSet.setEventReceiver(null);
+                if(count==0)
+                    missed++;
+                else
+                    missed = 0;
+                if(missed == 0){
+                    count = 0;
+                    bezirk.sendEvent(new SimulateKeyEvent(37));
+                }
             }
         };
+
         eventSet.setEventReceiver(new EventSet.EventReceiver() {
             @Override
             public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
@@ -72,9 +68,15 @@ public class MainActivity extends AppCompatActivity {
 //                    Log.e("BEACON", "Received beacons detect event");
                     for (Beacon beacon : beaconsDetectedEvt.getBeacons()) {
 //                        count = count + 1;
-//
-                        Timer timer = new Timer();
-                        timer.schedule(aliveMessage, 0, 1000*60);
+                        if(isConnectedFirstTime){
+                            isConnectedFirstTime = false;
+                            Timer timer = new Timer();
+                            timer.schedule(aliveMessage, 0, 1000*60);
+                        }
+                        else{
+                            count++;
+                        }
+
                     }
                 }
             }
