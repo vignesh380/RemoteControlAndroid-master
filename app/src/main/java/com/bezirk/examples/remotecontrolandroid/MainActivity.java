@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
     static Timer timer;
     private Bezirk bezirk;
 
+    Boolean isConnectedFirstTime = true;
+    int count = 0;
+    int missed = 0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +45,50 @@ public class MainActivity extends AppCompatActivity {
 
         Intent i = new Intent(this,DashBoard.class);
         startActivity(i);
+    }
+
+    private void setUpBeacon() {
+
+        EventSet eventSet = new EventSet(BeaconsDetectedEvent.class);
+        final TimerTask aliveMessage = new TimerTask() {
+            @Override
+            public void run() {
+                if(count==0)
+                    missed++;
+                else
+                    missed = 0;
+                if(missed == 0){
+                    count = 0;
+                    bezirk.sendEvent(new SimulateKeyEvent(37));
+                }
+            }
+        };
+
+        eventSet.setEventReceiver(new EventSet.EventReceiver() {
+            @Override
+            public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
+                if (event instanceof BeaconsDetectedEvent) {
+                    BeaconsDetectedEvent beaconsDetectedEvt = (BeaconsDetectedEvent) event;
+//                    Log.e("BEACON", "Received beacons detect event");
+                    for (Beacon beacon : beaconsDetectedEvt.getBeacons()) {
+//                        count = count + 1;
+                        if(isConnectedFirstTime){
+                            isConnectedFirstTime = false;
+                            Timer timer = new Timer();
+                            timer.schedule(aliveMessage, 0, 1000*60);
+                        }
+                        else{
+                            count++;
+                        }
+
+                    }
+                }
+            }
+        });
+
+        bezirk.subscribe(eventSet);
+        Log.e("BEACON", "Listening for Beacon events");
+
     }
 
 
