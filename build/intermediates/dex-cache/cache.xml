@@ -48,138 +48,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_2ae4fc081bef15c647afd4b40649f45b26db3609\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_1fadc2b46932ddc673527bba1d4f1e2083c3650a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.bezirk\android-zirk-proxy\3.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="a849bde52eef5b7ea81f9342c7a54be6ad12487d">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.bezirk-android-zirk-proxy-3.0.1_1be6e8a68571e1ee46c145a10b230deb672e5dd2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_1e155762562c964b85385bcf5460cc83519f5eaf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\control-messages\3.0.1\d131e88f952d6455487bd584f884b082e96eb707\control-messages-3.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="d131e88f952d6455487bd584f884b082e96eb707">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\control-messages-3.0.1_c38a14bf354bd0bbb1088c14724054c3e55bcfac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_218b3c88e6fc0104f7c957cf60d1c6753b2bf107\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.github.tony19\logback-android-classic\1.1.1-2\3b4bd0ce4a76bb72d8295fe4186d2aa610848a8c\logback-android-classic-1.1.1-2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="3b4bd0ce4a76bb72d8295fe4186d2aa610848a8c">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\logback-android-classic-1.1.1-2_1c76d6e0dbecbaf0fa26411b58841697495c53af\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\remote-logging\3.0.1\5fb4110dd9c1c749da42ff30c34eb3ed193ccc14\remote-logging-3.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="5fb4110dd9c1c749da42ff30c34eb3ed193ccc14">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\remote-logging-3.0.1_6e725112ea7e9dfba4bd27d1585cb6832a2d772f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f097ffcd0101dfbefc272e0f68d52f41ef6917e5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e14e07593dc760659c9d1fa83f1d2a7c530554ee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="d69ad8231f710b9b145aa5c6e4da03f1a9f6a46c">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d03aaf4c35d90f177e6dbe371ec7e02ba1796bf6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_3eb6f15a496f1d661b7cf695e298856ca91df710\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_08c6b8b8cc179c4782e6299437900a30b0901d30\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_e148e29801db448ef87a0c0daca5c4f35a593feb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\commons-beanutils\commons-beanutils\1.8.3\686ef3410bcf4ab8ce7fd0b899e832aaba5facf7\commons-beanutils-1.8.3.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="686ef3410bcf4ab8ce7fd0b899e832aaba5facf7">
         <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-beanutils-1.8.3_c8b662bd603dde6e4e10626b96c502f557db1696\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_2ae4fc081bef15c647afd4b40649f45b26db3609\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,12 +120,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_79268fdda2ed5247b39acc2c92aafa303b74215c\classes.dex" />
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_1fadc2b46932ddc673527bba1d4f1e2083c3650a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_f450d25aa702e323bdc3af083776aafa960fb3c8\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -273,6 +165,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_e14914dad5f7c22a158413325d68d1ecfa676439\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -288,6 +189,15 @@
         revision="24.0.0"
         sha1="1d0125bf578cb30dd192496db56c2d937495248a">
         <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\apktool-lib-1.4.4-3_f2dee80647f56069520c8fdd7f4e492106803d56\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.bezirk\android-zirk-proxy\3.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a849bde52eef5b7ea81f9342c7a54be6ad12487d">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.bezirk-android-zirk-proxy-3.0.1_1be6e8a68571e1ee46c145a10b230deb672e5dd2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -309,6 +219,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_047fb18ec462b78949971083cd1cd6bb8644c0d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\control-messages\3.0.1\d131e88f952d6455487bd584f884b082e96eb707\control-messages-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d131e88f952d6455487bd584f884b082e96eb707">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\control-messages-3.0.1_c38a14bf354bd0bbb1088c14724054c3e55bcfac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\bezirk\3.0.1\106d42fccc773069d96837458b6100f70409dd10\bezirk-3.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -327,12 +255,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.0_ddfbc47ede5ebdcd47998c6c5157b3c68b4dd142\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\data-storage\3.0.1\f9d366507c38fee670ab9cb4dcbea2949c42f1a3\data-storage-3.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="f9d366507c38fee670ab9cb4dcbea2949c42f1a3">
         <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\data-storage-3.0.1_017adeb594de0a04565fcd242061a07a368e36a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.github.tony19\logback-android-classic\1.1.1-2\3b4bd0ce4a76bb72d8295fe4186d2aa610848a8c\logback-android-classic-1.1.1-2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3b4bd0ce4a76bb72d8295fe4186d2aa610848a8c">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\logback-android-classic-1.1.1-2_1c76d6e0dbecbaf0fa26411b58841697495c53af\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -345,12 +291,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.bezirk\remote-logging\3.0.1\5fb4110dd9c1c749da42ff30c34eb3ed193ccc14\remote-logging-3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5fb4110dd9c1c749da42ff30c34eb3ed193ccc14">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\remote-logging-3.0.1_6e725112ea7e9dfba4bd27d1585cb6832a2d772f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f097ffcd0101dfbefc272e0f68d52f41ef6917e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e14e07593dc760659c9d1fa83f1d2a7c530554ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\org.zeromq\jeromq\0.3.6.1\1f2b04ed109321980979ad15561fcee1b3dcdf2f\jeromq-0.3.6.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="1f2b04ed109321980979ad15561fcee1b3dcdf2f">
         <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\jeromq-0.3.6.1_25af7e8639453e7773e6547fa80a69c303d54816\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="260bb3cb38c33b4509c5523053239fe4cbd5037f">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d03aaf4c35d90f177e6dbe371ec7e02ba1796bf6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_b79ea71f51180f98142de39f2a7105b44b20df20\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -372,12 +363,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_08c6b8b8cc179c4782e6299437900a30b0901d30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\vicky\.gradle\caches\modules-2\files-2.1\com.github.tony19\logback-android-core\1.1.1-2\bbce4935f5f1882ec37a7adaafabc76641beb15a\logback-android-core-1.1.1-2.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="bbce4935f5f1882ec37a7adaafabc76641beb15a">
         <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\logback-android-core-1.1.1-2_c1ab3fe4784065753f46a6488209c8ed8c99b727\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vicky\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\vicky\Downloads\RemoteControlAndroid-master\RemoteControlAndroid-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_c6124f4ed8143045dc223e2b4e89333f49c06350\classes.dex" />
     </item>
 
 </items>

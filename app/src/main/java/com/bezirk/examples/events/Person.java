@@ -11,6 +11,8 @@ public class Person {
     //Name of the person
     public String name;
 
+    public Person() {
+    }
 
     //Status of the person: in, out, asleep
     public PersonStatus status;

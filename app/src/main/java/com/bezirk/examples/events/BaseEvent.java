@@ -6,8 +6,7 @@ import com.bezirk.middleware.messages.Event;
  * Created by vicky on 10/22/2016.
  */
 
-public class BaseEvent extends Event {
-
+public class BaseEvent extends Event{
     //Sender
     private String senderId;
     public String SenderId()
@@ -36,5 +35,4 @@ public class BaseEvent extends Event {
         this.senderId = senderId;
         this.receiverId = receiverId;
     }
-
 }

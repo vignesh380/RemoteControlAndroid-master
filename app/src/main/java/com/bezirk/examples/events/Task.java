@@ -4,13 +4,16 @@ package com.bezirk.examples.events;
 /**
  * Created by yazid on 22-Oct-16.
  */
-
 public class Task {
     //Id of the last created task
     private static int lastId = 0;
 
     //Task id
-    public int id;
+    private int id;
+    public int getId(){
+
+        return id;
+    }
 
     //Person responsible for the task
     public Person assignedTo;
