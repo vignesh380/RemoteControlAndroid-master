@@ -16,8 +16,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:scaleType="fitXY"
         app:srcCompat="@android:drawable/checkbox_off_background"
         android:id="@+id/horizontal_image_view" />
 

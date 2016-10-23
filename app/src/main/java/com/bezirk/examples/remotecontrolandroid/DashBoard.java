@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import com.bezirk.examples.events.HouseStateEvent;
 import com.bezirk.examples.events.Person;
 import com.bezirk.examples.events.PersonStatus;
 import com.bezirk.examples.events.SimulateKeyEvent;
+import com.bezirk.examples.events.Task;
 import com.bezirk.hardwareevents.beacon.Beacon;
 import com.bezirk.hardwareevents.beacon.BeaconsDetectedEvent;
 import com.bezirk.middleware.Bezirk;
@@ -36,7 +38,8 @@ public class DashBoard extends AppCompatActivity{
 
 
     private RecyclerView vertical_recycler_view,horizontal_recycler_view;
-    private ArrayList<Person> horizontalList,verticalList;
+    private ArrayList<Person> horizontalList;
+    private ArrayList<Task> verticalList;
     private HorizontalAdapter horizontalAdapter;
     private  VerticalAdapter verticalAdapter;
     static Bezirk bezirk;
@@ -45,8 +48,7 @@ public class DashBoard extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dasboard_activity);
-        bezirk = AppApplication.bezirk;
-        setUpBeacon();
+
         vertical_recycler_view= (RecyclerView) findViewById(R.id.vertical_recycler_view);
         horizontal_recycler_view= (RecyclerView) findViewById(R.id.horizontal_recycler_view);
 
@@ -58,7 +60,10 @@ public class DashBoard extends AppCompatActivity{
         horizontalList.add(new Person("1","shaswath", PersonStatus.asleep));
 
         verticalList=new ArrayList<>();
-        verticalList.add(new Person("1","viggy",PersonStatus.asleep));
+        if(AppApplication.houseStateEvent != null && AppApplication.houseStateEvent.houseState != null){
+            verticalList.addAll(AppApplication.houseStateEvent.houseState.Tasks);
+        }
+        verticalList.add(new Task(false, null, "taskName", "Description"));
         horizontalAdapter=new HorizontalAdapter(horizontalList);
         verticalAdapter=new VerticalAdapter(verticalList);
 
@@ -77,63 +82,66 @@ public class DashBoard extends AppCompatActivity{
     }
 
 
-    private void setUpBeacon() {
-
-        EventSet eventSet = new EventSet(BeaconsDetectedEvent.class);
-        final TimerTask aliveMessage = new TimerTask() {
-            @Override
-            public void run() {
-//                if(count==0)
-//                    missed++;
-//                if(missed == 0){
-//                    count = 0;
-//                    bezirk.sendEvent(new SimulateKeyEvent(37));
-//                }
-                EventSet localEventSet = new EventSet(BeaconsDetectedEvent.class);
-                localEventSet.setEventReceiver(new EventSet.EventReceiver() {
-                    @Override
-                    public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
-                        if (event instanceof BeaconsDetectedEvent) {
-                            bezirk.sendEvent(new SimulateKeyEvent(37));
-                        }
-                    }
-                });
-                // localEventSet.setEventReceiver(null);
-            }
-        };
-        eventSet.setEventReceiver(new EventSet.EventReceiver() {
-            @Override
-            public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
-                if (event instanceof BeaconsDetectedEvent) {
-                    BeaconsDetectedEvent beaconsDetectedEvt = (BeaconsDetectedEvent) event;
-//                    Log.e("BEACON", "Received beacons detect event");
-                    for (Beacon beacon : beaconsDetectedEvt.getBeacons()) {
-//                        count = count + 1;
+//    private void setUpBeacon() {
 //
-                        Timer timer = new Timer();
-                        timer.schedule(aliveMessage, 0, 1000*60);
-                    }
-                }
-            }
-        });
-
-        bezirk.subscribe(eventSet);
-        Log.e("BEACON", "Listening for Beacon events");
-
-    }
+//        EventSet eventSet = new EventSet(BeaconsDetectedEvent.class);
+//        final TimerTask aliveMessage = new TimerTask() {
+//            @Override
+//            public void run() {
+////                if(count==0)
+////                    missed++;
+////                if(missed == 0){
+////                    count = 0;
+////                    bezirk.sendEvent(new SimulateKeyEvent(37));
+////                }
+//                EventSet localEventSet = new EventSet(BeaconsDetectedEvent.class);
+//                localEventSet.setEventReceiver(new EventSet.EventReceiver() {
+//                    @Override
+//                    public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
+//                        if (event instanceof BeaconsDetectedEvent) {
+//                            bezirk.sendEvent(new SimulateKeyEvent(37));
+//                        }
+//                    }
+//                });
+//                // localEventSet.setEventReceiver(null);
+//            }
+//        };
+//        eventSet.setEventReceiver(new EventSet.EventReceiver() {
+//            @Override
+//            public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
+//                if (event instanceof BeaconsDetectedEvent) {
+//                    BeaconsDetectedEvent beaconsDetectedEvt = (BeaconsDetectedEvent) event;
+////                    Log.e("BEACON", "Received beacons detect event");
+//                    for (Beacon beacon : beaconsDetectedEvt.getBeacons()) {
+////                        count = count + 1;
+////
+//                        Timer timer = new Timer();
+//                        timer.schedule(aliveMessage, 0, 1000*60);
+//                    }
+//                }
+//            }
+//        });
+//
+//        bezirk.subscribe(eventSet);
+//        Log.e("BEACON", "Listening for Beacon events");
+//
+//    }
 
 
 
 
     public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.MyViewHolder> {
 
+
         private List<Person> horizontalList;
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             public TextView txtView;
+            public ImageView imageView;
 
             public MyViewHolder(View view) {
                 super(view);
+                imageView = (ImageView) view.findViewById(R.id.horizontal_image_view);
                 txtView = (TextView) view.findViewById(R.id.txtView);
 
             }
@@ -155,6 +163,18 @@ public class DashBoard extends AppCompatActivity{
         @Override
         public void onBindViewHolder(final MyViewHolder holder, final int position) {
             holder.txtView.setText(horizontalList.get(position).name);
+            switch (horizontalList.get(position).status){
+                case asleep:
+                    holder.imageView.setImageResource(R.mipmap.sleep);
+                    break;
+                case in:
+                    holder.imageView.setImageResource(R.mipmap.athome);
+                    break;
+                case out:
+                    holder.imageView.setImageResource(R.mipmap.outofhouse);
+                    break;
+            }
+            holder.imageView.setImageResource(R.mipmap.sleep);
 
             holder.txtView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -174,7 +194,7 @@ public class DashBoard extends AppCompatActivity{
 
     public class VerticalAdapter extends RecyclerView.Adapter<VerticalAdapter.MyViewHolder> {
 
-        private List<Person> verticalList;
+        private List<Task> verticalList;
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             public TextView txtView;
@@ -187,7 +207,7 @@ public class DashBoard extends AppCompatActivity{
         }
 
 
-        public VerticalAdapter(ArrayList<Person> verticalList) {
+        public VerticalAdapter(ArrayList<Task> verticalList) {
             this.verticalList = verticalList;
         }
 
@@ -202,7 +222,7 @@ public class DashBoard extends AppCompatActivity{
         @Override
         public void onBindViewHolder(final MyViewHolder holder, final int position) {
 
-            holder.txtView.setText(verticalList.get(position).name);
+            holder.txtView.setText(verticalList.get(position).name + verticalList.get(position).description);
             holder.txtView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

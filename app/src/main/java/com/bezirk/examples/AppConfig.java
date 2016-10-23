@@ -19,7 +19,7 @@ public class AppConfig {
 
     public static Bezirk instantiate(Context context) {
         //Initialize the middleware and register your Zirk to get Bezirk instance.
-        Config config = new Config.ConfigBuilder().setGroupName("SVY-YOCO").create();
+        Config config = new Config.ConfigBuilder().setGroupName("SVYYOCO").create();
 
         BezirkMiddleware.initialize(context, config);
 
