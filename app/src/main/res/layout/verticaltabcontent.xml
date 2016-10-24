@@ -10,15 +10,28 @@
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:layout_marginLeft="20dp"
         android:id="@+id/checkBox" />
 
     <TextView
-        android:textColor="#787878"
-        android:textSize="18sp"
-        android:padding="16dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         tools:text = "adfih"
         android:id="@+id/txtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+   <!-- <ImageButton
+        android:id="@+id/parent_list_item_expand_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_margin="8dp"
+        android:src="@android:drawable/arrow_down_float" />-->
+
 </LinearLayout>

@@ -8,52 +8,21 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bezirk.examples.remotecontrolandroid.MainActivity">
-
-
-    <Button
-        android:onClick="playPauseBtnPressed"
-        android:text="Play/Pause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="81dp"
-        android:id="@+id/button1" />
-
-
-    <Button
-        android:onClick="backBtnPressed"
-        android:text="Back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_alignParentStart="true"
-        android:id="@+id/button2" />
-
-    <Button
-        android:onClick="forwardBtnPressed"
-        android:text="Forward"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button3" />
-
-    <Button
-        android:onClick="volumeDownBtnPressed"
-        android:text="Volume -"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/button4" />
+        android:id="@+id/error_image"
+        android:scaleType="fitXY"
+        android:src="@mipmap/error"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_below="@id/error_image"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="You are not in range."
+    android:layout_height="wrap_content" />
 
-    <Button
-        android:onClick="volumeUpBtnPressed"
-        android:text="Volume +"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/button5" />
 </RelativeLayout>

@@ -39,7 +39,7 @@ public class AppApplication extends Application {
             public void receiveEvent(Event event, ZirkEndPoint zirkEndPoint) {
                 if (event instanceof HouseStateEvent) {
                     houseStateEvent  = (HouseStateEvent) event;
-                    Log.e("Application", "HOuse state event " + houseStateEvent.ReceiverId());
+                    Log.e("Application", "House state event " + houseStateEvent.ReceiverId());
                 }
             }
         });

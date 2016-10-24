@@ -42,9 +42,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bezirk = AppApplication.bezirk;
+        final TimerTask aliveMessage = new TimerTask() {
+            @Override
+            public void run() {
+                Intent i = new Intent(MainActivity.this,DashBoard.class);
+                startActivity(i);
+                this.cancel();
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(aliveMessage, 5000);
 
-        Intent i = new Intent(this,DashBoard.class);
-        startActivity(i);
     }
 
     public void playPauseBtnPressed(View v) {
